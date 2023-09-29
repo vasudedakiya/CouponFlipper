@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Coupon List</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">CouponFlipper</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Coupons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Signup</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Spanish</a></li>
+                            <!-- Add more language options as needed -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-fluid mt-5 custom-container-fluid ">
+            <h2 class="text-center mb-4">Coupon Listings</h2>
+
+            <!-- Filter options (category, location, price range, etc.) go here -->
+            <div class="row mb-4 filter-options">
+                <div class="col-md-3">
+                    <!-- Category filter -->
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <select class="form-select" id="category">
+                            <option value="">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="dining">Dining</option>
+                            <!-- Add more category options as needed -->
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <!-- Location filter -->
+                    <div class="form-group">
+                        <label for="location">Location:</label>
+                        <select class="form-select" id="location">
+                            <option value="">All Locations</option>
+                            <option value="city1">City 1</option>
+                            <option value="city2">City 2</option>
+                            <!-- Add more location options as needed -->
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <!-- Price range filter -->
+                    <div class="form-group">
+                        <label for="price-range">Price Range:</label>
+                        <select class="form-select" id="price-range">
+                            <option value="">Any Price</option>
+                            <option value="0-25">$0 - $25</option>
+                            <option value="25-50">$25 - $50</option>
+                            <!-- Add more price range options as needed -->
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <!-- Apply filters button -->
+                    <button class="btn btn-primary btn-block" id="apply-filters">Apply Filters</button>
+                </div>
+            </div>
+
+            <!-- Coupon cards go here -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://picsum.photos/2000/1000" class="card-img-top" alt="Coupon 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Coupon Title 1</h5>
+                            <p class="card-text">Description of the coupon goes here. Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="original-price">$50</span>
+                                <span class="discounted-price">$30</span>
+                            </div>
+                            <p class="expiry-date">Expires on: 2023-12-31</p>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://picsum.photos/2000/1000" class="card-img-top" alt="Coupon 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Coupon Title 1</h5>
+                            <p class="card-text">Description of the coupon goes here. Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="original-price">$50</span>
+                                <span class="discounted-price">$30</span>
+                            </div>
+                            <p class="expiry-date">Expires on: 2023-12-31</p>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://picsum.photos/2000/1000" class="card-img-top" alt="Coupon 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Coupon Title 1</h5>
+                            <p class="card-text">Description of the coupon goes here. Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="original-price">$50</span>
+                                <span class="discounted-price">$30</span>
+                            </div>
+                            <p class="expiry-date">Expires on: 2023-12-31</p>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://picsum.photos/2000/1000" class="card-img-top" alt="Coupon 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Coupon Title 1</h5>
+                            <p class="card-text">Description of the coupon goes here. Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="original-price">$50</span>
+                                <span class="discounted-price">$30</span>
+                            </div>
+                            <p class="expiry-date">Expires on: 2023-12-31</p>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://picsum.photos/2000/1000" class="card-img-top" alt="Coupon 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Coupon Title 1</h5>
+                            <p class="card-text">Description of the coupon goes here. Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="original-price">$50</span>
+                                <span class="discounted-price">$30</span>
+                            </div>
+                            <p class="expiry-date">Expires on: 2023-12-31</p>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://picsum.photos/2000/1000" class="card-img-top" alt="Coupon 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Coupon Title 1</h5>
+                            <p class="card-text">Description of the coupon goes here. Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="original-price">$50</span>
+                                <span class="discounted-price">$30</span>
+                            </div>
+                            <p class="expiry-date">Expires on: 2023-12-31</p>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat this coupon card structure for multiple coupons -->
+            </div>
+
+            <!-- Pagination goes here -->
+            <div class="row">
+                <div class="col-md-12">
+                    <nav aria-label="Coupon Pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                            </li>
+                            <li class="page-item active">
+                                <span class="page-link">1</span>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <!-- Add more pagination links as needed -->
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

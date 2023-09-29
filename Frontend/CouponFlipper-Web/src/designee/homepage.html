@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>CouponFlipper</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">CouponFlipper</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Coupons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Signup</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Spanish</a></li>
+                            <!-- Add more language options as needed -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="hero-carousel">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/4000/2000" class="d-block w-100" alt="Carousel Image 1">
+                    <div class="carousel-caption">
+                        <h1>Discover Exclusive Discounts</h1>
+                        <p>Explore a wide range of coupons and save on your favorite products and services.</p>
+                        <a href="#" class="btn btn-primary btn-lg">Browse Coupons</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://loremflickr.com/4000/2000" class="d-block w-100" alt="Carousel Image 2">
+                    <div class="carousel-caption">
+                        <h1>Discover Amazing Discounts</h1>
+                        <p>Explore a wide range of coupons and save on your favorite products and services.</p>
+                        <a href="#" class="btn btn-primary btn-lg">View Coupons</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/featured/4000x2000" class="d-block w-100"
+                        alt="Carousel Image 2">
+                    <div class="carousel-caption">
+                        <h1>Sell Your Unused Coupons</h1>
+                        <p>Turn your unused coupons into cash and help others save on their purchases.</p>
+                        <a href="#" class="btn btn-primary btn-lg">Sell Coupons</a>
+                    </div>
+                </div>
+                <!-- Add more carousel items as needed -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <section class="featured-coupons">
+        <div class="container">
+            <h2 class="text-center">Featured Coupons</h2>
+            <div class="row">
+                <!-- Coupon Cards -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/2000/1000" class="card-img-top" alt="Coupon 1">
+                        <div class="card-body">
+                            <h5 class="card-title">20% Off on Electronics</h5>
+                            <p class="card-text">Save big on the latest gadgets and electronics.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://loremflickr.com/2000/1000" class="card-img-top" alt="Coupon 2">
+                        <div class="card-body">
+                            <h5 class="card-title">50% Off on Dining</h5>
+                            <p class="card-text">Enjoy a delicious meal at half the price.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/featured/2000x1000" class="card-img-top" alt="Coupon 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Free Spa Day</h5>
+                            <p class="card-text">Relax and rejuvenate with a complimentary spa day.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ... (previous code) ... -->
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="text-center">How It Works</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Search Coupons</h3>
+                    <p>Find coupons for your favorite products and services.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Add to Cart</h3>
+                    <p>Add coupons to your cart and proceed to checkout.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon">
+                        <i class="fas fa-money-bill"></i>
+                    </div>
+                    <h3>Save Money</h3>
+                    <p>Redeem coupons to save money on your purchases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-categories">
+        <div class="container">
+            <h2 class="text-center">Popular Categories</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="category">
+                        <img src="https://picsum.photos/1600/800" alt="Category 1">
+                        <h4>Electronics</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category">
+                        <img src="https://loremflickr.com/1600/800" alt="Category 2">
+                        <h4>Dining</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category">
+                        <img src="https://source.unsplash.com/featured/1600x800" alt="Category 3">
+                        <h4>Spa & Wellness</h4>
+                    </div>
+                </div>
+                <!-- Add more category items here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="text-center">Testimonials</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <img src="https://picsum.photos/400/400" alt="Testimonial 1">
+                        <p>"CouponFlipper saved me a lot of money on my recent shopping spree. Highly recommended!"</p>
+                        <h5>John Doe</h5>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <img src="https://loremflickr.com/400/400" alt="Testimonial 2">
+                        <p>"I love the variety of coupons available on CouponFlipper. It's a must-visit for savvy
+                            shoppers."</p>
+                        <h5>Jane Smith</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ... (remaining code) ... -->
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 CouponFlipper</p>
+    </footer>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00131a;
+    /* Dark background color */
+    color: #fff;
+    /* Text color */
+}
+
+/* Header styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+    /* Transparent background */
+    border-bottom: none;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00;
+    /* Text color for the brand/logo */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffcc00;
+    /* Customize the color of the toggle icon */
+    border-radius: 50%;
+    /* Make the toggle icon round */
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: #fff;
+    /* Text color for the links */
+    margin-right: 20px;
+    /* Add some spacing between links */
+    transition: color 0.2s;
+    /* Add a transition effect for text color */
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+    /* Change text color on hover */
+}
+
+
+/* Carousel styles */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background for carousel captions */
+    text-align: center;
+    padding: 4rem 0;
+    color: #fff;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #007bff;
+    /* Blue primary button background color */
+    border-color: #007bff;
+    /* Blue primary button border color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    border-color: #0056b3;
+}
+
+/* Featured coupons section */
+.featured-coupons {
+    background-color: #00131a;
+    /* Background color */
+    padding: 4rem 0;
+    color: #fff;
+}
+
+/* Coupon card styles */
+.card {
+    background-color: #00394d;
+    /* Slightly lighter card background color */
+    color: #fff;
+    /* Text color */
+    transition: transform 0.2s;
+    border: none;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    /* Background color */
+    color: #fff;
+    /* Text color */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* How It Works section */
+.how-it-works {
+    background-color: #002633;
+    /* Background color */
+    padding: 4rem 0;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.how-it-works .icon {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    /* Icon color */
+    text-align: center;
+    margin-bottom: 1rem;
+    transition: transform 0.2s, font-size 0.2s;
+    /* Add transitions for transform and font-size */
+}
+
+/* Scale-up effect on card hover */
+.how-it-works .col-md-4:hover .icon {
+    transform: scale(1.1);
+    font-size: 3rem;
+    /* Increase the font size on hover */
+}
+
+/* Increase text size on card hover */
+.how-it-works .col-md-4:hover h3 {
+    font-size: 1.75rem;
+    /* Increase the font size on hover */
+}
+
+.how-it-works .col-md-4 {
+    transition: background-color 0.2s;
+    /* Add a smooth transition for background color */
+}
+
+/* Color change effect on card hover */
+.how-it-works .col-md-4:hover {
+    background-color: #004466;
+    /* Change the background color on hover */
+}
+
+.how-it-works h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.how-it-works p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Popular Categories section */
+.popular-categories {
+    background-color: #00394d;
+    /* Background color */
+    padding: 4rem 0;
+}
+
+.popular-categories h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+    /* Text color */
+}
+
+.popular-categories .category {
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Add transitions for transform and box-shadow */
+    padding: 20px;
+    /* Add padding for a better appearance */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent background */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    /* Add a box-shadow effect */
+}
+
+.popular-categories .category:hover {
+    transform: scale(1.05);
+    /* Scale up on hover */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    /* Increase the box-shadow on hover */
+}
+
+.popular-categories .category img {
+    max-width: 100%;
+}
+
+.popular-categories h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    /* Text color */
+}
+
+
+/* Testimonials section */
+.testimonials {
+    background-color: #004d66;
+    /* Background color */
+    padding: 4rem 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonials .testimonial {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonials .testimonial img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.testimonials p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials h5 {
+    font-size: 1.25rem;
+}
+
+/* Add this CSS to your existing styles */
+/* Coupon Listings styles */
+.container {
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffcc00;
+}
+
+.filter-options {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.filter-group label {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.form-select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+#apply-filters {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#apply-filters:hover {
+    background-color: #ddaa00;
+    color: #333;
+}
+
+.coupon-card-list {
+    gap: 2rem;
+}
+
+.custom-container-fluid {
+    padding-left: 10%;
+    /* Adjust as needed */
+    padding-right: 10%;
+    /* Adjust as needed */
+}
+
+.card {
+    background-color: #002533;
+    color: #fff;
+    transition: transform 0.2s;
+    border: none;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    font-size: 1rem;
+    color: #ffcc00;
+    margin-right: 0.5rem;
+}
+
+.discounted-price {
+    font-size: 1.25rem;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.expiry-date {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Pagination styles */
+.pagination {
+    justify-content: center;
+}
+
+.page-link {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: #333;
+}
+
+.page-link:hover {
+    background-color: #ddaa00;
+    color: #333;
+}
+
+.page-item.active .page-link {
+    background-color: #ddaa00;
+    border-color: #ddaa00;
+    color: #333;
+}
